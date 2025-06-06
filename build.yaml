@@ -28,16 +28,13 @@ include:
     shield: velvet_v3_ui_right
 
   - board: ergohaven
-    shield: op36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    shield: op36_dongle
   - board: ergohaven
-    shield: op36_ruen op36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: op36_left_ruen-ergohaven-zmk
+    shield: op36_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: ergohaven
     shield: op36_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   - board: ergohaven
     shield: k03_left

@@ -1,14 +1,26 @@
-if SHIELD_OP36_LEFT
+if SHIELD_OP36_DONGLE
 
+# Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "EH_OP36"
+    default "EH OP36 Dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+# Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
+config BT_MAX_CONN
+    default 6
+
+# Set this to the same number as BT_MAX_CONN
+config BT_MAX_PAIRED
+    default 6
+
 endif
 
-if SHIELD_OP36_LEFT || SHIELD_OP36_RIGHT
+if SHIELD_OP36_LEFT || SHIELD_OP36_RIGHT || SHIELD_OP36_DONGLE
 
 config ZMK_SPLIT
     default y

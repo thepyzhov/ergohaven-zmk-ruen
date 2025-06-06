@@ -3,3 +3,6 @@ config SHIELD_OP36_LEFT
 
 config SHIELD_OP36_RIGHT
     def_bool $(shields_list_contains,op36_right)
+
+config SHIELD_OP36_DONGLE
+    def_bool $(shields_list_contains,my_keyboard_dongle)
