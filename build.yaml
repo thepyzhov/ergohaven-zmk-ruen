@@ -29,12 +29,15 @@ include:
 
   - board: ergohaven
     shield: op36_dongle
+    snippet: zmk-usb-logging
   - board: ergohaven
     shield: op36_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    snippet: zmk-usb-logging
   - board: ergohaven
     shield: op36_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    snippet: zmk-usb-logging
 
   - board: ergohaven
     shield: k03_left
