@@ -65,14 +65,14 @@ disp_spi: &spi3 {
    pinctrl-0 = <&spi3_default>;
 	pinctrl-1 = <&spi3_sleep>;
 	pinctrl-names = "default", "sleep";
-   cs-gpios = <&xiao_d 9 GPIO_ACTIVE_LOW>;
+   cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
    st7789: st7789v@0 {
        compatible = "sitronix,st7789v";
        spi-max-frequency = <31000000>;
        reg = <0>;
-       cmd-data-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
-       reset-gpios = <&xiao_d 3 GPIO_ACTIVE_LOW>;
+       cmd-data-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+       reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
        width = <240>;
        height = <280>;
        x-offset = <0>;
@@ -102,7 +102,7 @@ disp_spi: &spi3 {
        compatible = "avago,apds9960";
        status = "okay";
        reg = <0x39>;
-       int-gpios = <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+       int-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
    };
 };
 
