@@ -15,7 +15,7 @@
                   &kp GRAVE  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LALT  &kp LBKT   &kp RBKT
             >;
 
-            label = "Base";
+            display-name = "Base";
         };
 
         Navigation {
@@ -26,7 +26,7 @@
                 &trans    &trans   &trans   &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
             >;
 
-            label = "Navigation";
+            display-name = "Navigation";
         };
 
         Symbols {
@@ -37,7 +37,7 @@
                   &trans    &trans     &trans    &mo 3      &kp HASH    &trans  &trans     &trans    &trans     &trans
             >;
 
-            label = "Symbols";
+            display-name = "Symbols";
         };
 
         Adjust {
@@ -48,7 +48,7 @@
                     &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
-            label = "Adjust";
+            display-name = "Adjust";
         };
 
         User0 {
@@ -59,7 +59,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User0";
+            display-name = "User0";
         };
 
         User1 {
@@ -70,7 +70,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User1";
+            display-name = "User1";
         };
 
         User2 {
@@ -81,7 +81,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User2";
+            display-name = "User2";
         };
 
         User3 {
@@ -92,7 +92,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User3";
+            display-name = "User3";
         };
     };
 };
