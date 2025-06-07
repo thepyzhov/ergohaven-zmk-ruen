@@ -19,7 +19,7 @@ include:
     # snippet: studio-rpc-usb-uart
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
-    shield: velvet_v3_central_left
+    shield: velvet_v3_left_dongle
     snippet: zmk-usb-logging
     # snippet: studio-rpc-usb-uart
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
