@@ -14,7 +14,7 @@
 ---
 include:
   - board: ergohaven
-    shield: velvet_v3_dongle
+    shield: velvet_v3_dongle prospector_adapter
     snippet: zmk-usb-logging
     # snippet: studio-rpc-usb-uart
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
