@@ -21,6 +21,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmben {
+            bindings = <&layer_en>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        cmbru {
+            bindings = <&layer_ru>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+    };
+
     macros {
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
