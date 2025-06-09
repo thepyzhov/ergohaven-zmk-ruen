@@ -29,10 +29,10 @@ include:
     shield: velvet_v3_ui_left
     snippet: zmk-usb-logging
   - board: ergohaven
-    shield: velvet_v3_ui_ruen velvet_v3_ui_left
+    shield: velvet_v3_ui_ruen velvet_v3_ui_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: velvet_v3_ui_left_ruen-ergohaven-zmk
+    artifact-name: velvet_v3_ui_right_ruen-ergohaven-zmk
   - board: ergohaven
     snippet: zmk-usb-logging
     shield: velvet_v3_ui_right
