@@ -30,16 +30,16 @@
 &pinctrl {
    spi3_default: spi3_default {
 		group1 {
-			psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-				<NRF_PSEL(SPIM_MOSI, 1, 15)>,
+			psels = <NRF_PSEL(SPIM_SCK, 1, 11)>,
+				<NRF_PSEL(SPIM_MOSI, 1, 10)>,
 				<NRF_PSEL(SPIM_MISO, 1, 10)>;
 		};
 	};
 
 	spi3_sleep: spi3_sleep {
 		group1 {
-			psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-				<NRF_PSEL(SPIM_MOSI, 1, 15)>,
+			psels = <NRF_PSEL(SPIM_SCK, 1, 11)>,
+				<NRF_PSEL(SPIM_MOSI, 1, 10)>,
 				<NRF_PSEL(SPIM_MISO, 1, 10)>;
 			low-power-enable;
 		};
@@ -47,14 +47,14 @@
 
    pwm1_default: pwm1_default {
       group1 {
-         psels = <NRF_PSEL(PWM_OUT0, 1, 11)>;
+         psels = <NRF_PSEL(PWM_OUT0, 0, 2)>;
          nordic,invert;
       };
    };
 
    pwm1_sleep: pwm1_sleep {
       group1 {
-         psels = <NRF_PSEL(PWM_OUT0, 1, 11)>;
+         psels = <NRF_PSEL(PWM_OUT0, 0, 2)>;
          low-power-enable;
       };
    };
@@ -65,13 +65,13 @@ disp_spi: &spi3 {
    pinctrl-0 = <&spi3_default>;
 	pinctrl-1 = <&spi3_sleep>;
 	pinctrl-names = "default", "sleep";
-   cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
+   cs-gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
 
    st7789: st7789v@0 {
        compatible = "sitronix,st7789v";
        spi-max-frequency = <31000000>;
        reg = <0>;
-       cmd-data-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+       cmd-data-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
        reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
        width = <240>;
        height = <280>;
