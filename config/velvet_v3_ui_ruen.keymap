@@ -116,10 +116,10 @@
 
         sym {
             bindings = <
-&trans  &trans     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                       &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 5      &kp HASH    &trans  &trans     &trans    &kp LBKT   &kp RBKT
+&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp COLON  &kp LBKT  &kp UNDER  &kp RBKT      &kp SQT   &trans
+&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC      &kp EXCL  &kp COMMA
+&trans  &kp AMPS  &kp STAR  &kp CARET  &kp DOT   &kp DLLR                       &kp DQT    &kp PIPE  &kp TILDE  &kp QUESTION  &kp FSLH  &kp BSLH
+                  &trans    &trans     &trans    &mo 5      &kp HASH    &trans  &trans     &trans    &kp AT     &trans
             >;
 
             display-name = "sym";
@@ -128,18 +128,18 @@
         sym_ru {
             display-name = "sym_ru";
             bindings = <
-&trans  &trans            &en LT    &kp EQUAL     &en GT       &en GRAVE                      &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&trans  &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                       &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
-&trans  &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                       &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                          &trans    &trans        &trans       &mo 5      &en HASH    &trans  &trans     &trans      &en LBKT     &en RBKT
+&trans  &trans    &en LT    &kp EQUAL  &en GT      &en GRAVE                      &kp RU_COLON  &en LBKT  &kp UNDER    &en RBKT         &en SQT      &trans
+&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR    &kp PLUS                       &kp PRCNT     &en LBRC  &kp RU_SEMI  &kp RBRC         &kp EXCL     &kp RU_COMMA
+&trans  &en AMPS  &kp STAR  &en CARET  &kp RU_DOT  &en DLLR                       &kp RU_DQT    &en PIPE  &en TILDE    &kp RU_QUESTION  &kp RU_FSLH  &kp RU_BACKSLASH
+                  &trans    &trans     &trans      &mo 5      &en HASH    &trans  &trans        &trans    &en AT       &trans
             >;
         };
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &none         &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_MUTE        &kp K_NEXT    &none         &none
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4             &bt BT_CLR
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &kp LG(LS(KP_NUMBER_4))  &studio_unlock
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_MUTE        &kp K_NEXT    &none                    &none
                     &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
