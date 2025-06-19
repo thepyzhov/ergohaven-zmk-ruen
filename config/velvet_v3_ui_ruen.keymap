@@ -93,10 +93,10 @@
 
         nav {
             bindings = <
-&trans         &kp N1  &kp N2    &kp N3    &kp N4         &kp N5                     &kp N6        &kp N7        &kp N8         &kp N9         &kp N0  &trans
-&kp LG(SPACE)  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1       &mo 8                      &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &trans  &trans
-&trans         &trans  &kp HOME  &kp INS   &kp LC(SPACE)  &kp DEL                    &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans  &trans
-                       &trans    &trans    &trans         &trans   &trans    &trans  &mo 5         &trans        &trans         &trans
+&kp LG(SPACE)  &kp N1        &kp N2    &kp N3    &kp N4         &kp N5                     &kp N6        &kp N7        &kp N8         &kp N9         &kp N0    &trans
+&kp LCTRL      &mo 7         &mkp MB3  &mkp MB2  &mkp MB1       &mo 8                      &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &trans    &kp LCMD
+&trans         &kp LEFT_ALT  &kp HOME  &kp INS   &kp LC(SPACE)  &kp DEL                    &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RALT  &trans
+                             &trans    &trans    &trans         &trans   &trans    &trans  &mo 5         &trans        &trans         &trans
             >;
 
             display-name = "nav";
@@ -104,10 +104,10 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp COLON  &kp LBKT  &kp UNDER  &kp RBKT      &kp SQT   &trans
-&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC      &kp EXCL  &kp COMMA
-&trans  &kp AMPS  &kp STAR  &kp CARET  &kp DOT   &kp DLLR                       &kp DQT    &kp PIPE  &kp TILDE  &kp QUESTION  &kp FSLH  &kp BSLH
-                  &trans    &trans     &trans    &mo 5      &kp HASH    &trans  &trans     &trans    &kp AT     &trans
+&trans  &kp HASH  &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp COLON  &kp LBKT  &kp UNDER  &kp RBKT      &kp SQT   &trans
+&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC      &kp EXCL  &kp COMMA
+&trans  &kp AMPS  &kp STAR  &kp CARET  &kp DOT   &kp DLLR                     &kp DQT    &kp PIPE  &kp TILDE  &kp QUESTION  &kp FSLH  &kp BSLH
+                  &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &kp AT     &trans
             >;
 
             display-name = "sym";
@@ -116,18 +116,18 @@
         sym_ru {
             display-name = "sym_ru";
             bindings = <
-&trans  &trans    &en LT    &kp EQUAL  &en GT      &en GRAVE                      &kp RU_COLON  &en LBKT  &kp UNDER    &en RBKT         &en SQT      &trans
-&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR    &kp PLUS                       &kp PRCNT     &en LBRC  &kp RU_SEMI  &kp RBRC         &kp EXCL     &kp RU_COMMA
-&trans  &en AMPS  &kp STAR  &en CARET  &kp RU_DOT  &en DLLR                       &kp RU_DQT    &en PIPE  &en TILDE    &kp RU_QUESTION  &kp RU_FSLH  &kp RU_BACKSLASH
-                  &trans    &trans     &trans      &mo 5      &en HASH    &trans  &trans        &trans    &en AT       &trans
+&trans  &en HASH  &en LT    &kp EQUAL  &en GT      &en GRAVE                    &kp RU_COLON  &en LBKT  &kp UNDER    &en RBKT         &en SQT      &trans
+&trans  &trans    &kp LPAR  &kp MINUS  &kp RPAR    &kp PLUS                     &kp PRCNT     &en LBRC  &kp RU_SEMI  &kp RBRC         &kp EXCL     &kp RU_COMMA
+&trans  &en AMPS  &kp STAR  &en CARET  &kp RU_DOT  &en DLLR                     &kp RU_DQT    &en PIPE  &en TILDE    &kp RU_QUESTION  &kp RU_FSLH  &kp RU_BACKSLASH
+                  &trans    &trans     &trans      &mo 5      &trans    &trans  &trans        &trans    &en AT       &trans
             >;
         };
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4             &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &kp LG(LS(KP_NUMBER_4))  &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_MUTE        &kp K_NEXT    &none                    &none
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4              &bt BT_CLR
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LS(NUMBER_4))
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_MUTE        &kp K_NEXT    &none                     &none
                     &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
